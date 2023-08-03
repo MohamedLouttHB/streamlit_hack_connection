@@ -59,7 +59,6 @@ class KaggleDatasetConnection(ExperimentalBaseConnection):
                 latest_csv_file_path = max(csv_files, key=os.path.getmtime)
                 latest_csv_file_name = os.path.basename(latest_csv_file_path)
 
-
             # Read the CSV file to a DataFrame
             df = pd.read_csv(latest_csv_file_name)
 
