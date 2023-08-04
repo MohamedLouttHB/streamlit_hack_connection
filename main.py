@@ -52,6 +52,11 @@ def search(ds):
     df = pd.DataFrame(data)
     return df
 
+@st.cache_data
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv().encode('utf-8')
+
 col1, col2 = st.columns(2)
 with col1:
     #Search datasets
@@ -84,6 +89,15 @@ with col2:
                 conn = st.experimental_connection("kaggle_datasets", type=KaggleDatasetConnection)
                 df = conn.get(dataset_reference=view_ds, ttl=3600)
                 st.write(df.head(20))
+
+                ds_csv = convert_df(df)
+
+                st.download_button(
+                    label="Download dataset as CSV",
+                    data=ds_csv,
+                    file_name='df.csv',
+                    mime='text/csv',
+                )
         except Exception as e:
             st.error("ERROR : Reference not valid !")
 
