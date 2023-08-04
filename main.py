@@ -13,7 +13,7 @@ with st.sidebar:
     st.info("4. Paste the reference in auther input and click view, you will see the 20 first rows")
     st.markdown("<br>",unsafe_allow_html=True)
     st.markdown(
-        "<a href='https://github.com/MohamedLouttHB/streamlit_hack_connection'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png' height='30' width='30'></a> [ source code ](https://github.com/MohamedLouttHB/RSA_App)",
+        "<a href='https://github.com/MohamedLouttHB/streamlit_hack_connection'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png' height='30' width='30'></a> [ source code ](https://github.com/MohamedLouttHB/streamlit_hack_connection)",
         unsafe_allow_html=True)
 
     st.markdown(
