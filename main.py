@@ -23,7 +23,7 @@ with st.sidebar:
 
     st.write('**_:blue[Made by]_ :violet[Mohamed Loutt Horma Babana]**')
 
-st.image('https://i.postimg.cc/PfVwHZ2Z/kaggle-streamlit-header.png', width=500)
+st.image('https://i.postimg.cc/PfVwHZ2Z/kaggle-streamlit-header.png', width=500,)
 
 st.title("Streamlit-Kaggle Connector App", anchor=False)
 st.subheader("Using ``st.experimental_connection``", anchor=False)
