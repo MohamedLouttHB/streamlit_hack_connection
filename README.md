@@ -2,6 +2,7 @@
 # Streamlit-Kaggle Connection
 
 This project is a part of my streamlit connection hackathon participation, that use st.experimental_connection in order to connect to a kaggle datasets via kaggle api.
+You can search , view and download any dataset from kaggle.
 
 
 ![Logo](https://i.postimg.cc/PfVwHZ2Z/kaggle-streamlit-header.png)
