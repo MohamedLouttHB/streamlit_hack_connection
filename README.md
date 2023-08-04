@@ -33,8 +33,6 @@ Install my-project with pip
 
 https://st-hack-connection.streamlit.app/
 
-## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
